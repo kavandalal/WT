@@ -1,3 +1,3 @@
 # WT
 
-https://github.com/kavandalal/WT.git/html_form.html
+https://kavandalal.github.io/WT/html_form.html
