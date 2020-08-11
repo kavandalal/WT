@@ -1,0 +1,151 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+	margin:0; padding:0;
+	/* background-image: url("../image/img-1.jpg"); */
+	/* background-image: linear-gradient(45deg, rgb(0, 253, 76) ,rgb(8, 201, 191)); */
+	background-image: linear-gradient(45deg, rgb(3, 122, 39) ,rgb(9, 231, 220));
+	overflow: hidden;
+}
+
+/* start of nav bar */
+.nav-bar{
+	top:0;
+	height: 50px;
+	width: 100%;
+	justify-content: center;
+	display:flex;
+}
+.nav-bar span {
+	height: 100%;
+	text-align :center;
+    display:flex;
+    align-items:center;
+	justify-content:center;
+	background-image:linear-gradient(to right,rgb(0, 0, 0),rgb(59, 58, 58));
+	font-size : 30px;
+	letter-spacing: 5px;
+	color:white;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+a:visited{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: rgb(0, 204, 255);
+}
+/* end of nav bar  */
+
+
+/* start middle */
+.middle{
+	text-align: center;
+	height:100vh;
+    display: flex;
+	align-items : center ;
+	justify-content: center;
+}
+.con{
+	height: 100%;
+	width : 35%;
+	top: -7%;
+	position : relative ;
+	overflow: hidden;
+	display: flex;
+	align-items : center ;
+	justify-content: center;
+    text-align:center;
+    color:white; 
+}
+p{
+	font-size: 54px;
+	letter-spacing: 4px;
+	color:white;
+	margin:0;
+	letter-spacing: 5px;
+}
+table {
+	width: 75%;
+}
+tr,td{
+    color:white;
+	/* border:1px solid black; */
+	text-decoration: none;
+}
+td > input{
+	float:right;
+}
+.but{
+	float:none;
+	width:130px;
+}
+
+.form{
+	top: -7%;
+	text-align:center;
+    position:relative ;
+    float: left;
+}
+
+
+
+
+
+
+input,button{
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	color : rgb(26, 24, 24);
+	font-size:20px;
+	border: 0; padding : 0 ; margin: 5px;
+}
+label{
+    float:left;
+    font-size: 20px;
+}
+#isex{
+	width:20px;
+	height:16px;
+	float:none;
+}
+#sex{
+	float:none;
+}
+input:hover, button:hover{
+	background-color : rgb(0, 204, 255);
+}
+input:focus, button:focus{
+	color :white;
+	background-color : rgb(0, 0, 0);
+}
+/* end of middle  */
+
+/* startfooter */
+
+/* end of footer  */
+
+/* responsive design */
+@media (min-width : 992px) {
+	.con-lg-3{
+		float : left ;
+		width: 25%;
+	}
+}
+@media (min-width : 768px) and (max-width : 991px) {
+	.con-lg-3{
+		float : left ;
+		width: 25%;
+	}
+}
+@media (max-width : 767px) {
+	.con-lg-3{
+		float : left ;
+		width: 25%;
+	}
+}
