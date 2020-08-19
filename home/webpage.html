@@ -2,16 +2,31 @@
 <html>
 <head>
 	<title>Home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for search icon -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 	
 	<link rel="stylesheet" href="css/style.css"> 
 	</head>
 <body>
+
 	<section class="nav-bar">
-		<span class="home con-lg-3"><a href="#" class="nav-link">Home</a></span>
-		<span class="year con-lg-3"><a href="#">Year</a></span>
-		<span class="class con-lg-3"><a href="#">Class</a></span>
-		<span class="help con-lg-3"><a href="#">Help</a></span>
+		<div class="logo con-lg-2 con-md-2">
+			<span>Notes</span>
+		</div>
+		<div class="cont">
+			<span class="nav home con-lg-2 con-md-2"><a href="#" class="nav-link">Home</a></span>
+			<span class="nav year con-lg-2 con-md-2"><a href="#">Year</a></span>
+			<span class="nav class con-lg-2 con-md-2"><a href="#">Class</a></span>
+			<span class="nav help con-lg-2 con-md-2"><a href="#">Help</a></span>
+		</div>
+		<div class="search con-lg-2">
+			<form >
+				<input type="text" class="search-box" placeholder="Search">
+				<button type="submit" class="search-logo"><i class="fa fa-search"></i></button>
+			</form>
+			
+		</div>
 	</section>
+
 	<section class="middle">
 		<div class="con">
 				<form class="form">
