@@ -11,26 +11,57 @@ body{
 
 /* start of nav bar */
 .nav-bar{
-	top:0;
+	height: 50px; width:100%;
+	background-image: linear-gradient(to bottom, rgb(56, 56, 56) ,rgb(0, 0, 0));
+	position: relative;
+	text-align:center;
+	box-sizing: border-box;
+}
+
+.logo, .cont , .search{
 	height: 50px;
-	width: 100%;
-	justify-content: center;
-	display:flex;
+	position:relative;
+	display: inline;
 }
-.nav-bar span {
-	height: 100%;
-	text-align :center;
-    display:flex;
-    align-items:center;
-	justify-content:center;
-	background-image:linear-gradient(to right,rgb(0, 0, 0),rgb(59, 58, 58));
-	font-size : 30px;
-	letter-spacing: 5px;
-	color:white;
+.logo , .search{
+	background-image: linear-gradient(to bottom, rgb(141, 139, 139) , rgb(255, 255, 255));
+	
 }
+.logo{
+	border-radius: 0 0 50px 0;
+	
+}
+
+
+.search{
+	border-radius: 0 0 0 50px;
+}
+
+.nav-bar > div > span{
+	font-size: 25px;
+	letter-spacing: 4px;
+	position: relative;
+	top:17%;
+}
+.search-box{
+	height: 30px;
+	width:103px;
+	margin-top:10px;
+	margin-right: -4px;
+	background-color: none;
+	color :black;
+	border-radius:20px;
+}
+.search-logo{
+	height:30px; 
+	width:30px;
+	margin-top:10px;
+	border-radius:12px;
+}
+
 a{
 	text-decoration: none;
-	color:white;
+	color :white;
 }
 a:visited{
 	text-decoration: none;
@@ -74,7 +105,6 @@ table {
 }
 tr,td{
     color:white;
-	/* border:1px solid black; */
 	text-decoration: none;
 }
 td > input{
@@ -91,12 +121,6 @@ td > input{
     position:relative ;
     float: left;
 }
-
-
-
-
-
-
 input,button{
 	width: 200px;
 	height: 30px;
@@ -126,25 +150,43 @@ input:focus, button:focus{
 }
 /* end of middle  */
 
+
+
 /* startfooter */
+
 
 /* end of footer  */
 
+
+
 /* responsive design */
 @media (min-width : 992px) {
+	
+	.con-lg-1{		
+		float: left;
+		width: 8.33%;
+	}
+	.con-lg-2{
+		width: 16.66%;
+		float:left;
+	}
 	.con-lg-3{
+		float : left ;
+		width: 25%;
+	}	
+}
+@media (min-width : 768px) and (max-width : 991px) {
+	.con-md-3{
 		float : left ;
 		width: 25%;
 	}
-}
-@media (min-width : 768px) and (max-width : 991px) {
-	.con-lg-3{
-		float : left ;
-		width: 25%;
+	.con-md-2{
+		width: 16.66%;
+		float:left;
 	}
 }
 @media (max-width : 767px) {
-	.con-lg-3{
+	.con-sm-3{
 		float : left ;
 		width: 25%;
 	}
