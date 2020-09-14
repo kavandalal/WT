@@ -1,128 +1,294 @@
 *{
 	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
 }
 body{
 	margin:0; padding:0;
 	background-image: linear-gradient(45deg, rgb(3, 122, 39) ,rgb(9, 231, 220)); 
-	overflow: hidden;
+	
 }
-
+a{
+	text-decoration: none;
+	color:white;
+}
 
 /*start of navigation bar */
 
-.nav-bar{
-	height: 50px; width:100%;
-	background-image: linear-gradient(to bottom, rgb(56, 56, 56) ,rgb(0, 0, 0));
+.navbar{
+	justify-content: space-between;
 	position: relative;
-	text-align:center;
-	box-sizing: border-box;
 }
-
-.logo, .cont , .search{
-	height: 50px;
-	position:relative;
-	display: inline;
+.collapse {
+	justify-content: space-between;
+	position: relative;
+	/* display: flex; */
 }
-.logo , .search{
-	background-image: linear-gradient(to bottom, rgb(141, 139, 139) , rgb(255, 255, 255));
+.navbar-brand{
+	font-size: 1.5rem;
 }
-.logo{
-	border-radius: 0 0 50px 0;
-	
+#nav .nav-link{
+	color:white;
+	font-size:26px;
 }
-
 .search{
-	border-radius: 0 0 0 50px;
+	padding-left:25px;
 }
-
-.nav-bar > div > span{
-	font-size: 25px;
-	letter-spacing: 4px;
-	position: relative;
-	top:17%;
+.search-box , .search-logo{
+	float:right;
+	width:150px;
 }
 .search-box{
-	height: 30px;
-	width:103px;
-	margin-top:10px;
-	margin-right: -4px;
-	background-color: none;
-	color :black;
-	border-radius:20px;
+	margin-right: 10px;
+	padding-left: 10px;
 }
 .search-logo{
-	height:30px; 
-	width:30px;
-	margin-top:10px;
-	border-radius:12px;
+	width:auto;
 }
-
-a{
+.navbar-brand a:hover , .nav-link a:hover{
 	text-decoration: none;
-	color :white;
+	color:rgb(255, 166, 166) !important;
 }
-a:visited{
-	text-decoration: none;
-	color: white;
+.active{
+	border-bottom: 2px solid white;
 }
-a:hover{
-	color: rgb(0, 204, 255);
+@media (min-width:768px) and (max-width: 991px){
+	.search{
+		padding-left:5px;
+	}
+	.search-box{
+		width:100px;
+	}
 }
-/* end of nav bar  */
+@media (min-width:576px) and (max-width: 767px){
+	.col-md-2 ,.col-md-3, .col-md-7{
+		width:unset;
+	}
+	.search{
+		
+		padding-left:0px;
+	}
+	.search-box{
+		margin-right: 2px;;
+		width:85px;
+	}
+}
+@media (max-width: 575px) {
+	.navbar div{
+		text-align: center;
+	} 
+	.search-box , .search-logo{
+		float:none;
+		margin-top:9px;
+	}
+}
+/* end of navbar  */
 
 
 
 /*start of middle */
-.con{
-	height: 100vh; width : 100%;
-	position : relative ;
-	overflow: hidden;
-	display: flex;
-	align-items : center ;
-	justify-content: center;
-	
-}
-.form{
-	top: -12%;
-	text-align:center;
-	position:relative ;
-	
-}
-p{
-	font-size: 60px;
-	letter-spacing:5px;
-	color:white;
-	margin:0
+
+
+.middle section{
+	height: 550px;
+	width:100%;
+	background-image: linear-gradient(90deg, rgb(3, 122, 39) ,rgb(9, 231, 220));
+	overflow:hidden;
+	border-bottom: 2px solid black;
 }
 
-.signup{
-	font-size: 20px ;
+.text-1{
+	position:relative;
 }
-.signup:hover{
-	color: rgb(0, 204, 255);
+.card{
+	padding : 20px;
+	box-shadow: 16px 15px 28px;
 }
-input,button{
-	width: 280px;
-	height: 45px;
+.card p{
+	font-size: 20px;
+}
+.img_div{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:250px; 
+	width:100%;
+}
+.home_1_img{
+	height:259px; 
+	width:70%;
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.button{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.gs_btn , .exp_btn{
+	height: 48px;
+	width: 171px;
+	margin-left:10px;
+	margin-top: 50px; margin-bottom: 30px;
+	display: flex ;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(0, 132, 255);
+	color: white;
+	border : 2px solid black;
+	transition: .5s ease all ;
+}
+.gs_btn {
+	margin-right:25px ;
+}
+.exp_btn{
+	margin-left: 25px;
+}
+.gs_btn:hover , .exp_btn:hover{
+	transform:scale(1.4);
+	background-color: rgb(255, 128, 43);
+	color:black ;
+}
+/* start of add button */
+.dropup{
+	position: absolute;
+	right: 13%; bottom:8%;
+}
+.add{
+	height:50px;
+	width: 50px;
+	background-color: rgb(255, 0, 0);
+	color:white;
+	font-size: 35px;
+	font-weight: bold;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dropdown-menu{
+	height: auto;
+	justify-content: space-between;
+	align-items: stretch;
+	min-width: 2rem;
+}
+.dropdown-item:nth-child(){
+	background-color: rgb(163, 221, 255);
+	margin:5px 0;
+}
+.dropdown-item:hover{
+	background-color: rgb(144, 255, 134);
+}
+.middle .home-2{
+	height: 580px;
+}
+.display-img{
+	height: 580px;
+	display:grid;
+}
+.home-3{
+	
+	display:inline-block;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+.signin , .signup{
+	margin: 45px;
+	height: 110px ;
+	width: 300px;
+	font-size: 35px;
+	border-radius: 10%;
+	background-color: rgb(0, 132, 255);
+	border : 2px solid black;
 	text-align: center;
-	color : rgb(26, 24, 24);
-	font-size:25px;
-	border: 0; padding : 0 ; margin: 5px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	transition: .5s all ease ;
 }
-input:hover, button:hover{
-	background-color : rgb(0, 204, 255);
+a:hover{
+	text-decoration:none ;
 }
-input:focus, button:focus{
-	color :white;
-	background-color : rgb(0, 0, 0);
+.signin:hover ,.signup:hover{
+	transform: scale(1.4);
+	background-color: rgb(255, 128, 43);
+	color:black ;
 }
+.dropdown-menu{
+	border: 1px solid black;
+}
+@media(min-width:768px) and (max-width: 991px){
+	.img_div{ 
+		width:100%;
+	}
+	.middle .home-1{
+		height: 720px;
+	}
+	.dropup {
+		right: 11%;
+		bottom: 7%;
+	}
+}
+@media(min-width:576px) and (max-width: 767px){
+	.signin , .signup{
+		margin: 25px;
+		height: 110px ;
+		width: 220px;
+	}
+	.middle .home-1{
+		height: 765px;
+	}
+	.dropup {
+		right: 11%;
+		bottom: 5%;
+	}
+	.img_div{ 
+		width:100%;
+	}
+}
+@media (max-width: 576px){
+	.middle .home-1{
+		height: 840px;
+	}
+	.middle .home-2{
+		height:462px;
+	}
+	.display-img{
+		height:462px;
+	}
+	.dropup {
+		right: 8%;
+		bottom: 5%;
+	}
+	.img_div{ 
+		width:100%;
+	}
+	.gs_btn , .exp_btn{
+		margin: 25px;
+	}
+}
+/* end of add button */
 /* end of middle  */
 
 
 
 /* start of footer */
 
-
+footer{
+	background-color: rgb(36, 36, 36);
+	color:white;
+	
+}
+.maintxt{
+	font-size: 1.5em;
+	letter-spacing: .5em;
+}
+.subtxt{
+	font-size: .8em;
+	letter-spacing: .3em;
+	margin : 0;
+}
 
 
 /* end of footer */
