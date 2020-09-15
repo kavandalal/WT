@@ -51,7 +51,7 @@ a{
 .active{
 	border-bottom: 2px solid white;
 }
-@media (min-width:768px) and (max-width: 991px){
+@media screen and (min-width:768px) and (max-width: 991px) {
 	.search{
 		padding-left:5px;
 	}
@@ -59,12 +59,11 @@ a{
 		width:100px;
 	}
 }
-@media (min-width:576px) and (max-width: 767px){
+@media screen and (min-width:576px) and (max-width: 767px){
 	.col-md-2 ,.col-md-3, .col-md-7{
 		width:unset;
 	}
 	.search{
-		
 		padding-left:0px;
 	}
 	.search-box{
@@ -72,13 +71,19 @@ a{
 		width:85px;
 	}
 }
-@media (max-width: 575px) {
+@media screen and (max-width: 575px)  {
 	.navbar div{
 		text-align: center;
 	} 
 	.search-box , .search-logo{
 		float:none;
 		margin-top:9px;
+	}
+	#nav .nav-link{
+		font-size: 20px;
+	}
+	.nav-link{
+		padding: .5rem 0;
 	}
 }
 /* end of navbar  */
@@ -289,9 +294,25 @@ a:hover{
 		margin: 25px;
 	}
 	.middle .home-3{
-		height:830px;
+		height:761px;
 	}
+	.card p{
+		font-size: 17px;
+	}
+	.home-3 .con {
+		padding: 0px 0px;
+		height: 100%;
+	}
+	/* mobile adjustment */
+	.main-text{
+		font-size: 19px;
+	}
+	.home-3 ul{
+		padding-left: 0;
+	}
+
 }
+
 /* end of add button */
 /* end of middle  */
 

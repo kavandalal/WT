@@ -78,6 +78,12 @@ a{
 		float:none;
 		margin-top:9px;
 	}
+	#nav .nav-link{
+		font-size: 20px;
+	}
+	.nav-link{
+		padding: .5rem 0;
+	}
 }
 /* end of navbar  */
 

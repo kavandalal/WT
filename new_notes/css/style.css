@@ -80,6 +80,12 @@ a{
 		float:none;
 		margin-top:9px;
 	}
+	#nav .nav-link{
+		font-size: 20px;
+	}
+	.nav-link{
+		padding: .5rem 0;
+	}
 }
 /* end of navbar  */
 
@@ -129,6 +135,14 @@ td{
 .middle input:focus,.middle button:focus{
 	color :white;
 	background-color : rgb(0, 0, 0);
+}
+@media screen and (max-width:576px){
+	td{
+		font-size: 21px;
+	}
+	.middle input{
+		width: 138px
+	}
 }
 
 /* end of middle  */
